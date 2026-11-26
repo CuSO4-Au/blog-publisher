@@ -1,0 +1,13 @@
+.venv/
+.local/
+__pycache__/
+*.egg-info/
+/build/
+/dist/
+.env
+.env.*
+*.key
+*.pem
+*.publisher.json
+*.publisher.json.*
+*.publisher.lock

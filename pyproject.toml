@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blog-publisher"
+version = "0.1.0"
+description = "Publish local Markdown to a WordPress draft"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["markdown-it-py>=4,<5", "PyYAML>=6.0.2,<7"]
+
+[project.urls]
+Repository = "https://github.com/CuSO4-Au/blog-publisher"
+Issues = "https://github.com/CuSO4-Au/blog-publisher/issues"
+
+[project.scripts]
+blog-publisher = "blog_publisher.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
